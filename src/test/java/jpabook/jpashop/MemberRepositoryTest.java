@@ -19,7 +19,7 @@ public class MemberRepositoryTest {
     @Transactional
     public void testMember() throws Exception{
         Member member = new Member();
-        member.setUsername("DaseulSong");
+        member.setUsername("Daseul Song");
 
         Long saveId = memberRepository.save(member);
         Member findMember = memberRepository.find(saveId);
